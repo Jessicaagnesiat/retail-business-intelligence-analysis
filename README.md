@@ -200,6 +200,6 @@ Aspiring Data Analyst & Business Intelligence Analyst
 - Business Intelligence
 - Data Visualization
 
-LinkedIn: *(https://www.linkedin.com/in/jessicaagnesiat/)*
+LinkedIn: https://www.linkedin.com/in/jessicaagnesiat/
 
 Portfolio: https://jessicaagnesiat.github.io/portfolio-website/
