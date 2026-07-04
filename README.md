@@ -1,5 +1,11 @@
 # 🛍️ Retail Business Intelligence Analysis
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-4C72B0)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
 ## 📌 Project Overview
 
 This project analyzes retail sales performance using the Global Superstore dataset to uncover key business insights, identify profitability drivers, and provide data-driven strategic recommendations.
@@ -44,6 +50,9 @@ The dataset contains over **51,000 retail transactions** from **2011–2014**, i
 - Market
 - Region
 - Order Date
+
+**Dataset Source:**
+- Kaggle: https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset
 
 ---
 
