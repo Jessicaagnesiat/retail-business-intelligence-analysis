@@ -80,6 +80,29 @@ Executive Summary
 
 ---
 
+# 📊 Live Dashboard
+
+🚀 **Interactive Dashboard**
+
+https://retail-business-intelligence-analysis.streamlit.app/
+
+---
+
+## Dashboard Preview
+
+### Business Performance Overview
+
+![Overview](Dashboard%20img/1.png)
+
+### Product Performance
+
+![Product](Dashboard%20img/2.png)
+
+### Customer Retention & Segmentation
+
+![Customer](Dashboard%20img/3.png)
+---
+
 # 📊 Analysis Overview
 
 ## 1. Business Performance Analysis
