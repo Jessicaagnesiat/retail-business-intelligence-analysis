@@ -110,13 +110,9 @@ https://retail-business-intelligence-analysis.streamlit.app/
 
 ![Product](Dashboard%20img/2.png)
 
-### Market Analysis
+### Customer & Market Analysis
 
 ![Market](Dashboard%20img/3.png)
-
-### Customer Analysis
-
-![Customer](Dashboard%20img/4.png)
 
 ---
 
