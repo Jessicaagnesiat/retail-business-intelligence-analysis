@@ -1,58 +1,68 @@
-# 🛍️ Retail Business Intelligence Analysis
+# 🛍️ Retail Business Performance Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
-![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-4C72B0)
+![SQL](https://img.shields.io/badge/SQL-Analytics-blue)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
+---
 
 ## 📌 Project Overview
 
-This project analyzes retail sales performance using the Global Superstore dataset to uncover key business insights, identify profitability drivers, and provide data-driven strategic recommendations.
+This project analyzes four years of retail transaction data (2011–2014) to identify key business drivers affecting sales, profitability, customer behavior, and market performance.
 
-The analysis follows a Business Intelligence approach by exploring business performance, product profitability, root cause investigation, regional performance, and customer contribution to support better business decision-making.
+Rather than focusing solely on descriptive reporting, this project combines **Business Intelligence, statistical analysis, and customer segmentation** to uncover actionable insights and support data-driven business decisions.
 
 ---
 
 ## 🎯 Business Objectives
 
-- Evaluate overall business performance from 2011–2014.
-- Identify high-performing and underperforming product categories.
-- Investigate the root causes of low profitability.
-- Analyze regional and customer performance.
-- Provide actionable business recommendations based on data insights.
+- Analyze overall business performance from 2011–2014.
+- Identify profitable and underperforming products.
+- Evaluate the impact of discount strategies on profitability.
+- Analyze market and regional performance.
+- Segment customers using K-Means Clustering.
+- Develop strategic business recommendations.
 
 ---
 
 ## 🛠️ Tools & Technologies
 
+### Languages
 - Python
+
+### Libraries
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
-- Jupyter Notebook
+- Scikit-learn
+- SciPy
+- Scikit-posthocs
+
+### Business Intelligence
+- Power BI
 
 ---
 
 ## 📂 Dataset
 
-**Dataset:** Global Superstore
+**Dataset:** Global Superstore (Public Dataset)
 
-The dataset contains over **51,000 retail transactions** from **2011–2014**, including:
+The dataset contains over **51,000 retail transactions** collected between **2011–2014**, including:
 
-- Customer Information
-- Product Information
 - Sales
 - Profit
 - Discount
 - Shipping Cost
-- Market
-- Region
+- Customer Information
+- Product Information
+- Market & Region
 - Order Date
 
-**Dataset Source:**
-- Kaggle: https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset
+**Dataset Source**
+
+https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset
 
 ---
 
@@ -61,21 +71,23 @@ The dataset contains over **51,000 retail transactions** from **2011–2014**, i
 ```text
 Business Understanding
         ↓
-Data Understanding
+Data Cleaning & Preparation
         ↓
-Data Cleaning
+Exploratory Data Analysis
         ↓
 Business Performance Analysis
         ↓
-Product Performance Analysis
+Product & Profitability Analysis
         ↓
-Root Cause Analysis
+Statistical Validation
+(Kruskal–Wallis & Dunn's Test)
         ↓
 Market Performance Analysis
         ↓
-Customer Performance Analysis
+Customer Segmentation
+(K-Means Clustering + PCA)
         ↓
-Executive Summary
+Strategic Business Recommendations
 ```
 
 ---
@@ -88,131 +100,105 @@ https://retail-business-intelligence-analysis.streamlit.app/
 
 ---
 
-## Dashboard Preview
+# 📊 Dashboard Preview
 
-### Business Performance Overview
+### Business Performance
 
 ![Overview](Dashboard%20img/1.png)
 
-### Product Performance
+### Product Analysis
 
 ![Product](Dashboard%20img/2.png)
 
-### Customer Retention & Segmentation
+### Market Analysis
 
-![Customer](Dashboard%20img/3.png)
----
+![Market](Dashboard%20img/3.png)
 
-# 📊 Analysis Overview
+### Customer Analysis
 
-## 1. Business Performance Analysis
-
-- Monthly Sales Trend
-- Monthly Profit Trend
-
-### Key Insight
-
-Sales showed consistent growth from 2011–2014, while profit fluctuated more significantly, indicating that revenue growth alone did not guarantee stable profitability.
+![Customer](Dashboard%20img/4.png)
 
 ---
 
-## 2. Product Performance Analysis
+# 📈 Key Business Insights
 
-- Sales by Category
-- Profit by Category
-- Sales by Sub-Category
-- Profit by Sub-Category
+### 📊 Business Performance
 
-### Key Insight
+- Sales followed a consistent seasonal pattern across four years.
+- Profit experienced recurring declines, particularly during **July**.
 
-Technology was the strongest-performing category, while Furniture generated relatively high sales but comparatively lower profitability. Tables was identified as the weakest-performing sub-category with negative total profit.
+### 📦 Product Performance
 
----
-
-## 3. Root Cause Analysis
-
-- Discount Analysis
-- Shipping Cost Analysis
-- Product Risk Analysis (Loss Rate)
-- Root Cause Validation
-
-### Key Insight
-
-The analysis identified **discount levels above approximately 20%** as the primary factor associated with declining profitability.
-
-Although Tables incurred relatively high shipping costs, shipping cost was **not identified as the primary driver**, supported by a positive correlation between shipping cost and profit.
-
-Loss Rate analysis further revealed hidden transaction-level risks that could not be identified through aggregated profit alone.
-
----
-
-## 4. Market Performance Analysis
-
-- Sales by Market
-- Profit by Market
-- Sales by Region
-- Profit by Region
-
-### Key Insight
-
-APAC generated the highest sales and profit among all markets.
-
-At the regional level, the Central region demonstrated the strongest overall business performance, while Southeast Asia showed relatively high sales but comparatively weaker profitability.
-
----
-
-## 5. Customer Performance Analysis
-
-- Sales by Customer Segment
-- Profit by Customer Segment
-- Top 10 Customers by Sales
-
-### Key Insight
-
-The Consumer segment contributed the highest overall sales and profit.
-
-Tom Ashbrook was identified as the highest-value customer based on total sales.
-
----
-
-# 🔍 Key Findings
-
-- Sales increased steadily between 2011 and 2014.
 - Technology generated the highest sales and profit.
-- Furniture produced strong sales but relatively weak profitability.
-- Tables recorded negative total profit and the highest loss rate (57.6%).
-- Average profit declined noticeably when discounts exceeded approximately 20%.
-- Shipping cost was not the primary driver of low profitability.
-- APAC and the Central region were the strongest-performing markets.
-- Consumer customers generated the highest sales and profit.
+- Tables consistently recorded negative profitability despite relatively high sales.
+
+### 💰 Pricing Strategy
+
+- Discounts above **20%** significantly reduced profitability without generating statistically significant additional purchase volume.
+- Kruskal–Wallis and Dunn's post-hoc tests validated that discounts beyond 20% did not significantly increase purchase quantity.
+
+### 🌍 Market Performance
+
+- APAC generated the highest overall sales and profit.
+- Canada achieved strong profit margins while maintaining minimal discount levels.
+
+### 👥 Customer Analysis
+
+- K-Means clustering identified **five distinct customer segments**.
+- High-Value customers represented the greatest long-term business value.
+- Discount-Dependent customers generated revenue but consistently reduced profitability.
 
 ---
 
-# 💼 Business Recommendations
+# 💼 Strategic Business Recommendations
 
-- Review discount strategies for products receiving discounts above 20%.
-- Reassess pricing and promotional strategies for the Tables sub-category.
-- Continue investing in high-performing markets such as APAC.
-- Strengthen customer retention programs for high-value customers.
-- Monitor transaction-level loss rates alongside traditional profitability metrics.
+### 💰 Pricing Optimization
+
+- Limit discounts to **20% or below**
+- Reduce excessive discounting on low-margin products
+
+### 📦 Product Optimization
+
+- Prioritize high-margin product categories
+- Review pricing and assortment of underperforming sub-categories
+
+### 👥 Customer Strategy
+
+- Retain High-Value customers
+- Reactivate At-Risk customers through personalized campaigns
+
+### 🌍 Market Strategy
+
+- Expand growth initiatives in APAC
+- Replicate Canada's low-discount, high-margin pricing approach where applicable
 
 ---
 
 # 📈 Business Impact
 
-This project demonstrates how Business Intelligence techniques can be applied to transform retail transaction data into actionable business insights.
+This project demonstrates how Business Intelligence, statistical analysis, and customer analytics can be integrated to transform retail transaction data into actionable business strategies.
 
-Rather than focusing solely on descriptive reporting, the analysis investigates profitability drivers, validates potential root causes, evaluates operational risks, and provides strategic recommendations to support data-driven decision-making.
+The analysis not only identifies profitability drivers but also validates findings statistically and translates insights into practical recommendations that support sustainable business growth.
 
 ---
 
 ## 📁 Repository Structure
 
 ```text
-Retail-Business-Intelligence-Analysis
+Retail-Business-Performance-Analysis
 │
-├── Retail_Business_Intelligence_Analysis.ipynb
-├── Global_Superstore.xlsx
+├── notebooks/
+│   └── Retail_Business_Performance_Analysis.ipynb
+│
+├── dashboard/
+│   ├── Retail Dashboard.pbix
+│   └── Dashboard img/
+│
+├── data/
+│   └── Global_Superstore.xlsx
+│
+├── app.py
+├── requirements.txt
 ├── README.md
 └── images/
 ```
@@ -223,15 +209,21 @@ Retail-Business-Intelligence-Analysis
 
 **Jessica Agnesia Tataung**
 
-Aspiring Data Analyst & Business Intelligence Analyst
+**Aspiring Business Intelligence Analyst | Data Analyst**
+
+### Skills
 
 - Python
-- SQL
 - Power BI
-- Tableau
+- Machine Learning
+- Statistical Analysis
 - Business Intelligence
 - Data Visualization
 
-LinkedIn: https://www.linkedin.com/in/jessicaagnesiat/
+🔗 **LinkedIn**
 
-Portfolio: https://jessicaagnesiat.github.io/portfolio-website/
+https://www.linkedin.com/in/jessicaagnesiat/
+
+🌐 **Portfolio**
+
+https://jessicaagnesiat.github.io/portfolio-website/
